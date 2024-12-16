@@ -1,0 +1,70 @@
+h1,
+h2 {
+  margin: 0;
+}
+
+.item {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.header {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  background-color: #131313;
+}
+
+.container {
+  max-width: 712px;
+  min-height: 50px;
+  padding: 16px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+}
+
+.menu-btn,
+.menu-btn-one {
+  display: block;
+  width: 30px;
+  height: 25px;
+  position: relative;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 50px;
+}
+
+/* *** example 1 *** */
+
+.menu-btn-one:hover .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-btn-one:hover .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn-one:hover .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
