@@ -23,6 +23,7 @@ a {
   margin-top: 20px;
   margin-bottom: 50px;
   background-color: #131313;
+  position: relative;
 }
 
 .container {
@@ -104,4 +105,30 @@ a {
 
 .menu-one {
   display: none;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-one.active {
+  min-height: 25vh;
+  display: block;
+  position: absolute;
+  padding: 120px 0;
+  background-color: #131313;
+  top: 82px;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-list-one {
+  display: flex;
+  width: 100%;
+  min-height: 160px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
