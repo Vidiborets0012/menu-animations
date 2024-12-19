@@ -3,6 +3,17 @@ h2 {
   margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .item {
   margin-top: 10px;
   text-align: center;
@@ -55,6 +66,16 @@ h2 {
   min-height: 50px;
 }
 
+.menu-list,
+.menu-list-one {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 /* *** example 1 *** */
 
 /* .menu-btn-one:hover .bar:nth-child(1) {
@@ -79,4 +100,8 @@ h2 {
 
 .menu-btn-one.active .bar:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.menu-one {
+  display: none;
 }
