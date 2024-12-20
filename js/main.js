@@ -40,3 +40,15 @@ menuButtonThree.addEventListener('click', () => {
     });
 });
 
+const menuButtonFour = document.querySelector('.menu-btn-four');
+const menuFour = document.querySelector('.menu-four');
+
+menuButtonFour.addEventListener('click', () => {
+    
+    menuButtonFour.classList.toggle('active');
+    menuFour.classList.toggle('active');
+
+    bars.forEach(bar => {
+        bar.classList.toggle('active');
+    });
+});

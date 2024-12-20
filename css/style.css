@@ -43,7 +43,8 @@ a {
 .menu-btn,
 .menu-btn-one,
 .menu-btn-two,
-.menu-btn-three {
+.menu-btn-three,
+.menu-btn-four {
   display: block;
   width: 30px;
   height: 25px;
@@ -72,7 +73,8 @@ a {
 .menu-list,
 .menu-list-one,
 .menu-list-two,
-.menu-list-three {
+.menu-list-three,
+.menu-list-four {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -97,7 +99,8 @@ a {
 
 .menu-one,
 .menu-two,
-.menu-three {
+.menu-three,
+.menu-four {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -106,7 +109,8 @@ a {
 
 .menu-one.active,
 .menu-two.active,
-.menu-three.active {
+.menu-three.active,
+.menu-four.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -123,7 +127,8 @@ a {
 
 .menu-list-one,
 .menu-list-two,
-.menu-list-three {
+.menu-list-three,
+.menu-list-four {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -152,4 +157,19 @@ a {
 
 .menu-btn-three.active .bar {
   transform: scale(1.5);
+}
+
+/* *** example 4 *** */
+/* Анімація змін напрямку ліній */
+
+.menu-btn-four.active .bar:nth-child(1) {
+  transform: rotate(90deg);
+}
+
+.menu-btn-four.active .bar:nth-child(2) {
+  transform: scaleY(0);
+}
+
+.menu-btn-four.active .bar:nth-child(3) {
+  transform: rotate(-90deg);
 }
