@@ -41,7 +41,8 @@ a {
 }
 
 .menu-btn,
-.menu-btn-one {
+.menu-btn-one,
+.menu-btn-two {
   display: block;
   width: 30px;
   height: 25px;
@@ -68,7 +69,8 @@ a {
 }
 
 .menu-list,
-.menu-list-one {
+.menu-list-one,
+.menu-list-two {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -78,18 +80,6 @@ a {
 }
 
 /* *** example 1 *** */
-
-/* .menu-btn-one:hover .bar:nth-child(1) {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.menu-btn-one:hover .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.menu-btn-one:hover .bar:nth-child(3) {
-  transform: rotate(45deg) translate(-5px, -6px);
-} */
 
 .menu-btn-one.active .bar:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
@@ -103,14 +93,16 @@ a {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-.menu-one {
+.menu-one,
+.menu-two {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
   transition: all 0.3s ease-in-out;
 }
 
-.menu-one.active {
+.menu-one.active,
+.menu-two.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -120,15 +112,32 @@ a {
   left: 0;
   right: 0;
   opacity: 1;
+  z-index: 10;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
 }
 
-.menu-list-one {
+.menu-list-one,
+.menu-list-two {
   display: flex;
   width: 100%;
   min-height: 160px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+/* *** example 2 *** */
+/* Анімація зсуву ліній вліво */
+
+.menu-btn-two.active .bar:nth-child(1) {
+  transform: translateX(-10px);
+}
+
+.menu-btn-two.active .bar:nth-child(2) {
+  transform: translateX(0);
+}
+
+.menu-btn-two.active .bar:nth-child(3) {
+  transform: translateX(10px);
 }
