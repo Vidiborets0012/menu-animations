@@ -44,7 +44,8 @@ a {
 .menu-btn-one,
 .menu-btn-two,
 .menu-btn-three,
-.menu-btn-four {
+.menu-btn-four,
+.menu-btn-five {
   display: block;
   width: 30px;
   height: 25px;
@@ -74,7 +75,8 @@ a {
 .menu-list-one,
 .menu-list-two,
 .menu-list-three,
-.menu-list-four {
+.menu-list-four,
+.menu-list-five {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -100,7 +102,8 @@ a {
 .menu-one,
 .menu-two,
 .menu-three,
-.menu-four {
+.menu-four,
+.menu-five {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -110,7 +113,8 @@ a {
 .menu-one.active,
 .menu-two.active,
 .menu-three.active,
-.menu-four.active {
+.menu-four.active,
+.menu-five.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -128,7 +132,8 @@ a {
 .menu-list-one,
 .menu-list-two,
 .menu-list-three,
-.menu-list-four {
+.menu-list-four,
+.menu-list-five {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -172,4 +177,23 @@ a {
 
 .menu-btn-four.active .bar:nth-child(3) {
   transform: rotate(-90deg);
+}
+
+/* *** example 5 *** */
+/* Використання ключових кадрів (keyframes) */
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-btn-five.active .bar:nth-child(1) {
+  animation: rotate 0.5s linear infinite;
 }
