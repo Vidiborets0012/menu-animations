@@ -27,3 +27,16 @@ menuButtonTwo.addEventListener('click', () => {
     });
 });
 
+const menuButtonThree = document.querySelector('.menu-btn-three');
+const menuThree = document.querySelector('.menu-three');
+
+menuButtonThree.addEventListener('click', () => {
+    
+    menuButtonThree.classList.toggle('active');
+    menuThree.classList.toggle('active');
+
+    bars.forEach(bar => {
+        bar.classList.toggle('active');
+    });
+});
+

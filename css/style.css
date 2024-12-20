@@ -42,7 +42,8 @@ a {
 
 .menu-btn,
 .menu-btn-one,
-.menu-btn-two {
+.menu-btn-two,
+.menu-btn-three {
   display: block;
   width: 30px;
   height: 25px;
@@ -70,7 +71,8 @@ a {
 
 .menu-list,
 .menu-list-one,
-.menu-list-two {
+.menu-list-two,
+.menu-list-three {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -94,7 +96,8 @@ a {
 }
 
 .menu-one,
-.menu-two {
+.menu-two,
+.menu-three {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -102,7 +105,8 @@ a {
 }
 
 .menu-one.active,
-.menu-two.active {
+.menu-two.active,
+.menu-three.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -118,7 +122,8 @@ a {
 }
 
 .menu-list-one,
-.menu-list-two {
+.menu-list-two,
+.menu-list-three {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -140,4 +145,11 @@ a {
 
 .menu-btn-two.active .bar:nth-child(3) {
   transform: translateX(10px);
+}
+
+/* *** example 3 *** */
+/* Анімація масштабування ліній */
+
+.menu-btn-three.active .bar {
+  transform: scale(1.5);
 }
