@@ -49,7 +49,8 @@ a {
 .menu-btn-six,
 .menu-btn-seven,
 .menu-btn-eight,
-.menu-btn-nine {
+.menu-btn-nine,
+.menu-btn-ten {
   display: block;
   width: 30px;
   height: 25px;
@@ -84,7 +85,8 @@ a {
 .menu-list-six,
 .menu-list-seven,
 .menu-list-eight,
-.menu-list-nine {
+.menu-list-nine,
+.menu-list-ten {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -115,7 +117,8 @@ a {
 .menu-six,
 .menu-seven,
 .menu-eight,
-.menu-nine {
+.menu-nine,
+.menu-ten {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -130,7 +133,8 @@ a {
 .menu-six.active,
 .menu-seven.active,
 .menu-eight.active,
-.menu-nine.active {
+.menu-nine.active,
+.menu-ten.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -153,7 +157,8 @@ a {
 .menu-list-six,
 .menu-list-seven,
 .menu-list-eight,
-.menu-list-nine {
+.menu-list-nine,
+.menu-list-ten {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -265,4 +270,11 @@ a {
 
 .menu-btn-nine.active .bar {
   background: linear-gradient(to right, #f0f, #0ff);
+}
+
+/* *** example 10 *** */
+/* Анімація з використанням згинання (bend) */
+
+.menu-btn-ten.active .bar:nth-child(1) {
+  transform: skewY(30deg);
 }

@@ -117,3 +117,16 @@ menuButtonNine.addEventListener('click', () => {
         bar.classList.toggle('active');
     });
 });
+
+const menuButtonTen = document.querySelector('.menu-btn-ten');
+const menuTen = document.querySelector('.menu-ten');
+
+menuButtonTen.addEventListener('click', () => {
+    
+    menuButtonTen.classList.toggle('active');
+    menuTen.classList.toggle('active');
+
+    bars.forEach(bar => {
+        bar.classList.toggle('active');
+    });
+});
