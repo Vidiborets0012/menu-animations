@@ -91,3 +91,16 @@ menuButtonSeven.addEventListener('click', () => {
         bar.classList.toggle('active');
     });
 });
+
+const menuButtonEight = document.querySelector('.menu-btn-eight');
+const menuEight = document.querySelector('.menu-eight');
+
+menuButtonEight.addEventListener('click', () => {
+    
+    menuButtonEight.classList.toggle('active');
+    menuEight.classList.toggle('active');
+
+    bars.forEach(bar => {
+        bar.classList.toggle('active');
+    });
+});

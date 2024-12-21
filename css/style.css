@@ -47,7 +47,8 @@ a {
 .menu-btn-four,
 .menu-btn-five,
 .menu-btn-six,
-.menu-btn-seven {
+.menu-btn-seven,
+.menu-btn-eight {
   display: block;
   width: 30px;
   height: 25px;
@@ -80,7 +81,8 @@ a {
 .menu-list-four,
 .menu-list-five,
 .menu-list-six,
-.menu-list-seven {
+.menu-list-seven,
+.menu-list-eight {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -109,7 +111,8 @@ a {
 .menu-four,
 .menu-five,
 .menu-six,
-.menu-seven {
+.menu-seven,
+.menu-eight {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -122,7 +125,8 @@ a {
 .menu-four.active,
 .menu-five.active,
 .menu-six.active,
-.menu-seven.active {
+.menu-seven.active,
+.menu-eight.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -143,7 +147,8 @@ a {
 .menu-list-four,
 .menu-list-five,
 .menu-list-six,
-.menu-list-seven {
+.menu-list-seven,
+.menu-list-eight {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -237,4 +242,15 @@ a {
 
 .menu-btn-seven.active .bar:nth-child(2) {
   filter: hue-rotate(180deg);
+}
+
+/* *** example 8 *** */
+/* Анімація з використанням зсуву та масштабування */
+
+.menu-btn-eight.active .bar:nth-child(1) {
+  transform: scaleY(0.5) translateY(10px);
+}
+
+.menu-btn-eight.active .bar:nth-child(2) {
+  transform: scaleX(2);
 }
