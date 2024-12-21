@@ -45,7 +45,8 @@ a {
 .menu-btn-two,
 .menu-btn-three,
 .menu-btn-four,
-.menu-btn-five {
+.menu-btn-five,
+.menu-btn-six {
   display: block;
   width: 30px;
   height: 25px;
@@ -76,7 +77,8 @@ a {
 .menu-list-two,
 .menu-list-three,
 .menu-list-four,
-.menu-list-five {
+.menu-list-five,
+.menu-list-six {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -103,7 +105,8 @@ a {
 .menu-two,
 .menu-three,
 .menu-four,
-.menu-five {
+.menu-five,
+.menu-six {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -114,7 +117,8 @@ a {
 .menu-two.active,
 .menu-three.active,
 .menu-four.active,
-.menu-five.active {
+.menu-five.active,
+.menu-six.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -133,7 +137,8 @@ a {
 .menu-list-two,
 .menu-list-three,
 .menu-list-four,
-.menu-list-five {
+.menu-list-five,
+.menu-list-six {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -196,4 +201,24 @@ a {
 
 .menu-btn-five.active .bar:nth-child(1) {
   animation: rotate 0.5s linear infinite;
+}
+
+/* *** example 6 *** */
+/* Використання ключових кадрів (keyframes) і трансформацій*/
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  50% {
+    transform: rotateX(180deg);
+  }
+  100% {
+    transform: rotateX(360deg);
+  }
+}
+
+.menu-btn-six.active .bar:nth-child(1) {
+  animation: flip 0.5s ease-in-out;
+  background-color: #007bff;
 }

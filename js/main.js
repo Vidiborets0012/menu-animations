@@ -65,3 +65,16 @@ menuButtonFive.addEventListener('click', () => {
         bar.classList.toggle('active');
     });
 });
+
+const menuButtonSix = document.querySelector('.menu-btn-six');
+const menuSix = document.querySelector('.menu-six');
+
+menuButtonSix.addEventListener('click', () => {
+    
+    menuButtonSix.classList.toggle('active');
+    menuSix.classList.toggle('active');
+
+    bars.forEach(bar => {
+        bar.classList.toggle('active');
+    });
+});
