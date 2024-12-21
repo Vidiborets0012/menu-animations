@@ -46,7 +46,8 @@ a {
 .menu-btn-three,
 .menu-btn-four,
 .menu-btn-five,
-.menu-btn-six {
+.menu-btn-six,
+.menu-btn-seven {
   display: block;
   width: 30px;
   height: 25px;
@@ -78,7 +79,8 @@ a {
 .menu-list-three,
 .menu-list-four,
 .menu-list-five,
-.menu-list-six {
+.menu-list-six,
+.menu-list-seven {
   display: flex;
   width: 260px;
   justify-content: space-between;
@@ -106,7 +108,8 @@ a {
 .menu-three,
 .menu-four,
 .menu-five,
-.menu-six {
+.menu-six,
+.menu-seven {
   display: none;
   opacity: 0;
   transform: translateY(-20px);
@@ -118,7 +121,8 @@ a {
 .menu-three.active,
 .menu-four.active,
 .menu-five.active,
-.menu-six.active {
+.menu-six.active,
+.menu-seven.active {
   min-height: 25vh;
   display: block;
   position: absolute;
@@ -138,7 +142,8 @@ a {
 .menu-list-three,
 .menu-list-four,
 .menu-list-five,
-.menu-list-six {
+.menu-list-six,
+.menu-list-seven {
   display: flex;
   width: 100%;
   min-height: 160px;
@@ -221,4 +226,15 @@ a {
 .menu-btn-six.active .bar:nth-child(1) {
   animation: flip 0.5s ease-in-out;
   background-color: #007bff;
+}
+
+/* *** example 7 *** */
+/* Анімація з використанням фільтрів */
+
+.menu-btn-seven.active .bar:nth-child(1) {
+  filter: blur(5px);
+}
+
+.menu-btn-seven.active .bar:nth-child(2) {
+  filter: hue-rotate(180deg);
 }
